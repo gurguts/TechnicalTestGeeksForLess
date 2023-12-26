@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mathematical Assistant</title>
+
+</head>
+<body>
+<h1>Mathematical Assistant</h1>
+
+<link rel="stylesheet" type="text/css" href="/index/css/style.css">
+
+<form>
+    <label for="equation">Enter Equation:</label>
+    <p id="messageEquation" style="display: none;"></p>
+    <input type="text" id="equation" name="equation">
+    <button type="button" id="saveEquationButton">Save</button>
+</form>
+
+<form>
+    <input type="checkbox" id="rootCheckBox" onclick="toggleRootFields()">
+    <label for="rootCheckBox">Add Root</label>
+    <p id="messageRoots" style="display: none;"></p>
+    <div id="rootFields" style="display:none;">
+        <label for="root">Root:</label>
+        <input type="text" id="root" name="root">
+        <br>
+        <button type="button" id="saveRootsButton">Check and Save</button>
+    </div>
+</form>
+
+<button type="button" id="moveToListRoots">Find Equations</button>
+
+<script src="/index/script/saveRoot.js"></script>
+<script src="/index/script/saveEquation.js"></script>
+<script src="/index/script/moveToList.js"></script>
+</body>
+</html>

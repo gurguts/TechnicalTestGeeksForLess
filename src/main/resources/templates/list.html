@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+
+    <link rel="stylesheet" type="text/css" href="/list/css/style.css">
+
+</head>
+<body>
+<table id="rootsTable">
+    <div>
+        <button type="button" id="findAllRoots">Find All Roots</button>
+    </div>
+    <div>
+        <label for="rootInput"></label><input type="number" id="rootInput" placeholder="Enter a root" oninput="checkInput()">
+        <button type="button" id="findEquationsByRootButton" disabled>Find Equations</button>
+    </div>
+    <div>
+        <label for="numberRootInput"></label><input type="number" id="numberRootInput" placeholder="Enter a number" oninput="checkInputNumber()">
+        <button type="button" id="findNumberRootEquationsButton" disabled>Find equations with a given number of roots</button>
+    </div>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Equation</th>
+        <th>Root</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<button type="button" id="moveToIndex">Back</button>
+
+<script src="/list/script/backButton.js"></script>
+<script src="/list/script/findEquationsButton.js"></script>
+<script src="/list/script/loadAndDisplayRoots.js"></script>
+</body>
+</html>
